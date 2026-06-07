@@ -1,35 +1,44 @@
-## Conditional Statements-Compare Two Numbers
+## Conditional Statements: Positive Number Checker
 ## Aim
-Write a C program to read values of x and y and print whether x == y or x != y using an if-else statement.
+To write a C program that reads a value A from the user and checks whether it is a positive number or not.
 
 ## Algorithm
-Declare variables x and y.
+Declare a variable to store the input value A.
 
-Read two integers x and y from the user.
+Use the scanf function to read the value of A from the user.
 
-Check if x is equal to y using the if statement.
+Check if the value of A is greater than zero.
 
-If x is equal to y, print "X is equal to Y".
+If A is greater than zero, print a message indicating that it's a positive number.
 
-If x is not equal to y, print "X is NOT equal to Y".
+Otherwise, print a message indicating that it's not a positive number.
+
+End the program.
 
 ## Program
 ```
 #include <stdio.h>
+
 int main() {
-    int x, y;
-    printf("Enter two integers (x and y): ");
-    scanf("%d %d", &x, &y);
-    if (x == y) {
-        printf("X is equal to Y\n");
+    int A;  
+    printf("Enter a number: ");
+    scanf("%d", &A);
+    if (A > 0) {
+        printf("A is a positive number.\n");
     } else {
-        printf("X is NOT equal to Y\n");
+        printf("A is not a positive number.\n");
     }
-    return 0;
+    return 0; 
 }
 ```
 
 ## Output
-User Input: Enter two integers (x and y): 5 5 Program Output: X is equal to Y
+```
+User Input:
+Enter a number: 10
+Program Output:
+A is a positive number.
+```
 ## Result
-Program to read values of x and y and print whether x == y or x != y using an if-else statement was implemented and executed successfully.
+programme was implemented and executed.
+   
