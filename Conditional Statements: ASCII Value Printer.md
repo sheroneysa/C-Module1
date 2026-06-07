@@ -29,3 +29,14 @@ int main() {
             break;
         default:
             printf("Invalid input. Please enter a valid alphabet: a, z, A, or Z.\n");
+    }
+    return 0;
+}
+```
+## Output
+User Input:
+Enter a character (a, z, A, or Z): a
+Program Output:
+ASCII value of 'a' is 97
+## Result
+programme was implemented and executed
