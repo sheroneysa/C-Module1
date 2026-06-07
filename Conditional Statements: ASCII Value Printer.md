@@ -1,20 +1,35 @@
-# Conditional Statements: ASCII Value Printer in C
-
+## Conditional Statements-Compare Two Numbers
 ## Aim
-To write a C program that prints the ASCII value of the characters 'a', 'z', 'A', or 'Z' using a switch statement. If any other character is entered, the program prompts the user to enter a valid alphabet.
+Write a C program to read values of x and y and print whether x == y or x != y using an if-else statement.
 
 ## Algorithm
-1.Declare a variable ch of type char.
+Declare variables x and y.
 
-2.Read a character from the user.
+Read two integers x and y from the user.
 
-3. Use a switch statement to check if ch is 'a', 'A', 'z', or 'Z'.
+Check if x is equal to y using the if statement.
 
-4. If ch matches any of these cases, print its ASCII value using the printf function with %d format specifier.
+If x is equal to y, print "X is equal to Y".
+
+If x is not equal to y, print "X is NOT equal to Y".
 
 ## Program
-Add code here
+```
+#include <stdio.h>
+int main() {
+    int x, y;
+    printf("Enter two integers (x and y): ");
+    scanf("%d %d", &x, &y);
+    if (x == y) {
+        printf("X is equal to Y\n");
+    } else {
+        printf("X is NOT equal to Y\n");
+    }
+    return 0;
+}
+```
 
 ## Output
-
+User Input: Enter two integers (x and y): 5 5 Program Output: X is equal to Y
 ## Result
+Program to read values of x and y and print whether x == y or x != y using an if-else statement was implemented and executed successfully.
